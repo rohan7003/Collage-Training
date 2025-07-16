@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b48181;
+  }
+  /* h1{
+    text-align: center;
+    background: darkgrey;
+  } */
+  
+  .traffic-light {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .light {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #555;
+    margin: auto;
+  }
+  
+  .red.active {
+    background-color: red;
+  }
+  
+  .yellow.active {
+    background-color: yellow;
+  }
+  
+  .green.active {
+    background-color: green;
+  }
+  

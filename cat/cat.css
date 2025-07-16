@@ -1,0 +1,24 @@
+body{
+    background: linear-gradient(to left, red, yellow, orange);
+    text-align: center;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+button{
+    width: 100px;
+    background: black;
+    color: lavenderblush;
+    font-family: cursive;
+    font-size: 18px;
+    border-radius: 9px;
+    transition: 2s;
+}
+
+button.hover{
+    background: lightseagreen;
+    color: black;
+    cursor: pointer;
+}

@@ -1,0 +1,29 @@
+body{
+    background: lavenderblush;
+}
+
+h1{
+    background: darkgoldenrod;
+    text-align: center;
+    color: azure;
+}
+
+div{
+    background: rgb(118, 76, 138);
+    height: 100px;
+    width: 400px;
+    margin-left: 20px;
+    border-radius: 27px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    padding: 10px;
+}
+
+#b{
+    background: lightsalmon;
+}
+
+#c{
+    background: rgb(153, 211, 231);
+}

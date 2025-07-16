@@ -1,0 +1,20 @@
+body{
+    background: lemonchiffon;
+}
+h2{
+    text-align: center;
+    background: rgb(37, 6, 16);
+}
+
+div{
+    /* border: 2px solid black; */
+    display: inline-block;
+    margin-left: 30%;
+    text-align: center;
+}
+input{
+    width: 100%;
+}
+button{
+    margin-left: 3%;
+}

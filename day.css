@@ -1,0 +1,16 @@
+body{
+    background: darkcyan;
+    text-align: center;
+    color: crimson;
+    transition: 3s;
+}
+.night{
+    background: black;
+    color: yellow;
+    transition: 3s;
+}
+
+div{
+    display: flex;
+    justify-content: flex-end;
+}

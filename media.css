@@ -1,0 +1,46 @@
+body{
+    background-color: orange;
+}
+
+@media (min-width: 300px) and (max-width: 800px){
+    body{
+        background-color: aqua;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1500px){
+    body{
+        background-color: plum;
+    }
+}
+@media (min-width: 1500px) and (max-width: 2500px){
+    body{
+        background-color: darkolivegreen;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 800px){
+    body{
+        background-color: aqua;
+        #c{
+            display: block;
+        }
+    }
+};
+
+@media (min-width: 800px) and (max-width: 1500px){
+    body{
+        background-color: plum;
+        #b{
+            display: block;
+        }
+    }
+};
+@media (min-width: 1500px) and (max-width: 2500px){
+    body{
+        background-color: darkolivegreen;
+        #a{
+            display: block
+        }
+    }
+};

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+
+    <h1 id="a">Welcome to mern stack</h1>
+    <h3 id="g">Text Align Center Using JS</h3>
+    <p>Make My Font Size 30px</p>
+    <h4>Make my background black and text yellow</h4>
+
+    <script>
+      z = document.getElementById("a");
+      console.log(z);
+      z.textContent = "I Know JS";
+
+      y = document.getElementById("g")
+      console.log(y);
+      y.style.textAlign = "center"
+
+      x = document.querySelector('p')
+      console.log(x);
+      x.style.fontSize= '30px'
+      
+      h = document.querySelector('h4')
+      console.log(h);
+      h.style.background = 'black';
+      h.style.Color = 'yellow'
+      
+      
+    </script>
+
+  </body>
+</html>
