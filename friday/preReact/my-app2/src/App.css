@@ -1,0 +1,19 @@
+body{
+  background: lightskyblue;
+}
+.card{
+  background: darkgoldenrod;
+  border: 1px solid black;
+  max-width: 250px;
+  max-height: 250px;
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+img{
+  width: 180px;
+  height: 150px;
+}

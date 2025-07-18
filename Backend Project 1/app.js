@@ -28,10 +28,20 @@ app.post('/names',(req,res)=>{
     .then(savedName => res.json(savedName))
 })
 
-
 app.get("/names",(req,res)=>{
     Name.find()
     .then(names => res.json(names))
+})
+
+app.get("/user/:id", (req, res) => {
+    res.send(`The id is ${req.params.id}`)
+})
+
+app.put("/names/:id",(req,res)=>{
+    Name.findByIdAndUpdate
+    (req.params.id,{
+        name: req.body.name
+    },{new:true}).then(updatedName =>{res.json(updatedName)})
 })
 
 app.delete("/names/:id",(req,res)=>{

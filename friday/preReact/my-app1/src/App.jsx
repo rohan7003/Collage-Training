@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Safe from './Safe';
 import Denger from './Denger';
+import Greet from './components/Greet';
 
 function App(){
   const heroin = "Dvesena"
@@ -11,6 +12,8 @@ function App(){
   return (
     <>
     <Header />
+    <Greet name ="Rohan"/>
+    <Greet />
       <h1>Hello World</h1>
       <h3>Hii students</h3>
       <h2>My choise is { heroin}</h2>
