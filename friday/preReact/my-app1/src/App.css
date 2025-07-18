@@ -1,0 +1,12 @@
+body{
+  background: rebeccapurple;
+  text-align: center;
+}
+.s{
+  background: rgb(160, 87, 87);
+  color: chartreuse;
+}
+.r{
+  background: yellow;
+  color: brown;
+}
