@@ -1,28 +1,44 @@
-import { useState } from 'react';
-import './App.css'
-function App(){
+import "./App.css";
+import { useState } from "react";
+import Demo from "./Demo";
 
-  const [friends,setFriends]= useState('')
+function App() {
+  const [name, setName] = useState("");
+  const [friends, setfriends] = useState([]);
 
-  const myData=(e)=>{
-    e.preventDefault()
-    console.log(friends);
-    setFriends('')
-  }
-  return(
-  <>
-    <h1>I Am Learning Form Handling</h1>
-    <form onSubmit={myData}>
-      Name : <input
-      type="text"
-      placeholder="Enter Name" 
-      value={friends}
-      onChange={(e)=>setFriends(e.target.value)}
-      required/>
-      <button> Add</button>
-    </form>
-  </>
-  )
+  const data = (e) => {
+    e.preventDefault();
+    // console.log(name)
+    setfriends(friends.concat(name));
+    setName("");
+  };
+  return (
+    <>
+      <h1>Form Handling</h1>
+      <form onSubmit={data}>
+        <input
+          type="text"
+          placeholder="Enter Name"
+          required
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+
+        <button>Add</button>
+      </form>
+
+      <h3>My friends List</h3>
+      <ul>
+        {friends.map((ff,i) => (
+          <li key={i}>{ff}
+          <button>Update</button>
+          <button>Delete</button>
+          </li>
+        ))}
+      </ul>
+      <Demo/>
+    </>
+  );
 }
 
-export default App
+export default App;

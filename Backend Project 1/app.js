@@ -21,7 +21,6 @@ const nameSchema = new mongoose.Schema({
 
 const Name = mongoose.model('name',nameSchema)
 
-
 app.post('/names',(req,res)=>{
     const newName = new Name({name: req.body.name})
     newName.save()
